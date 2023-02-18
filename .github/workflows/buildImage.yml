@@ -47,9 +47,5 @@ jobs:
         run: echo ${SHORT_SHA}
       - name: Build and push jenkins image
         run: |
-          docker build . -t  ${{ env.container_registry }}/${BRANCH_NAME}/mart:${SHORT_SHA}
-          docker push ${container_registry}/${BRANCH_NAME}/mart:${SHORT_SHA}
-      - name: Build and push vaultservice image
-        run: |
           docker build . -t uday1kiran/jenkins_custom_image:${SHORT_SHA}
           docker push uday1kiran/jenkins_custom_image:${SHORT_SHA}
