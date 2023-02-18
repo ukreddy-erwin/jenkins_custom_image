@@ -3,6 +3,7 @@ FROM jenkins/jenkins:lts
 USER root
 
 # Install custom plugins
+RUN jenkins-plugin-cli --update
 RUN jenkins-plugin-cli install-plugin -n snyk-security-scanner -v 2.12.1
 RUN jenkins-plugin-cli install-plugin -n file-operations -v 1.11
 RUN jenkins-plugin-cli install-plugin -n branch-api -v 2.5.6
