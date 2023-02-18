@@ -4,7 +4,7 @@ USER root
 
 # Install custom plugins
 RUN /usr/local/bin/install-plugins.sh \
-     snyk-security-scanner:2.12.1 (3.2.6) \
+     snyk-security-scanner:2.12.1 \
      file-operations:1.11 \
      branch-api:2.5.6 \
      pipeline-build-step:2.13 \
