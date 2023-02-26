@@ -6,7 +6,7 @@ name: Docker Image Build
 on:
   push:
     branches:
-      - 'ukreddy*'
+      - '*'
       - 'main'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
